@@ -6,33 +6,10 @@ module.exports = {
   ],
   media: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      fontFamily: {
-        sourceCodePro: ['Source Code Pro', 'monospace'], // Adding Source Code Pro as a monospaced font
-        carlito: ['Carlito', 'sans-serif'],
-        staatliches: ['Staatliches', 'sans-serif'],
-        ptsans: ['PT Sans', 'sans-serif'],
-        barlow:['Barlow Condensed', 'sans-serif'],
-      },
-    },
+    extend: {},
   },
   variants: {
     extend: {},
   },
-  plugins: [
-    require('tailwindcss-highlights'), // If you have this plugin
-    function ({ addComponents }) {
-      addComponents({
-        'p': {
-          fontFamily: 'Carlito, sans-serif',
-        },
-        'h1': {
-          fontFamily: 'Barlow Condensed, sans-serif',
-        },
-        'h5': {
-          fontFamily: 'Carlito, sans-serif',
-        },
-      })
-    },
-  ],
+  plugins: [],
 }
