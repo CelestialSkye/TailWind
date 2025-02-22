@@ -27,5 +27,6 @@ npm run build
 
 ## Run with live-server
 
-live-server public
+Make sure you're in public by typing cd public
+serve .
 
